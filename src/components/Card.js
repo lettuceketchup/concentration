@@ -1,9 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-import '../../images/DeckCards.svg';
+import styled, { css } from 'styled-components';
 
 const StyledCard = styled.div`
-    width: 7rem;
+    width: 10rem;
     height: 10rem;
     background-color: crimson;
 `
@@ -11,7 +10,7 @@ const StyledCard = styled.div`
 const Card = () => {
     return (
         <StyledCard>
-            
+
         </StyledCard>
     );
 }

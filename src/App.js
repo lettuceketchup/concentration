@@ -1,9 +1,27 @@
 import React from 'react';
-import Card from './components/Card/Card'
+import Header from './components/Header/Header';
+import PlayingField from './components/PlayingField/PlayingField';
+import { cardSets } from "./cardSets";
+
+const theme = {
+  color: 'green',
+  background: 'aliceblue'
+};
+
+const size = 12;
+const cardType = 'color'
 
 function App() {
+  console.log(cardSets);
   return (
-    <Card />
+    <>
+      <Header theme={theme} />
+      <PlayingField 
+        size={size} 
+        cardSet={cardSets[0]} 
+        cardType={cardType} 
+      />
+    </>
   );
 }
 
